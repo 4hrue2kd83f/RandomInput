@@ -6,14 +6,15 @@ clear.onclick = () => {
 }
 
 enter.onclick = () => {
-    if (confirm("Enter this word: " + currentWord + "?")) {
+    if (true) {
         textArea.value += currentWord;
+        textArea.value += " ";
     }
 }
 changePos();
 
 newword.onclick = () => {
-    if (confirm("Are you sure you want to get a new word?")) {
+    if (true) {
         currentWord = wordlist[Math.floor(Math.random() * wordlist.length)];
         document.getElementById("selectedWord").innerHTML = currentWord;
         counter++;
@@ -21,38 +22,38 @@ newword.onclick = () => {
 }
 
 space.onclick = () => {
-    if (confirm("Are you sure you want to add a space?")) {
+    if (true) {
         textArea.value += " ";
     }
 }
 
 tkls.onclick = () => {
-    if (confirm("Are you sure you want to remove a space?\n\nNOTE: If you didn't just add a space, there will be serious consequences!")) {
-        if (textArea.value.charAt(textArea.value.length - 1) == " ") {
+    if (true) {
+        if (true) {
             textArea.value = textArea.value.slice(0, -1);
-        } else {
-            alert("This isn't a backspace button, you hacker. To avoid further hacking, the text box will now be cleared.");
-            textArea.value = "";
+        // } else {
+        //     alert("No space was removed because there wasn't one.");
+        //     textArea.value = "";
         }
     }
 }
 
 uppercase.onclick = () => {
-    if (confirm("Are you sure you want to capitalize this word?")) {
+    if (true) {
         currentWord = currentWord.charAt(0).toUpperCase() + currentWord.slice(1)
         document.getElementById("selectedWord").innerHTML = currentWord;
     }
 }
 
 lowercase.onclick = () => {
-    if (confirm("Are you sure you want to lowercase this word?")) {
-        currentWord = currentWord.charAt(0).toUpperCase() + currentWord.slice(1)
+    if (true) {
+        currentWord = currentWord.charAt(0).toLowerCase() + currentWord.slice(1)
         document.getElementById("selectedWord").innerHTML = currentWord;
     }
 }
 
 newline.onclick = () => {
-    if (confirm("Are you sure you want to add a new line?")) {
+    if (true) {
         textArea.value += "\n";
     }
 }
