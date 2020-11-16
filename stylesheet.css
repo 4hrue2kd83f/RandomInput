@@ -12,10 +12,6 @@ button {
     cursor: pointer;
 }
 
-button:active {
-    background-color: blue;
-}
-
 
 /* The post */
 
@@ -23,11 +19,57 @@ button:active {
     font-weight: bold;
 }
 
-#post,
-#enter {
+#post {
     border: 1px solid gray;
     display: inline-block;
     padding: 8px;
+}
+
+button {
+    border: 1px solid gray;
+    display: inline-block;
+    padding: 8px;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.lime {
+    background-color: lime;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.magenta {
+    background-color: magenta;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: purple;
+    color: white;
 }
 
 #want {
