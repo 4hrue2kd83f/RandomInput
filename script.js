@@ -46,7 +46,7 @@ uppercase.onclick = () => {
 
 lowercase.onclick = () => {
     if (confirm("Are you sure you want to lowercase this word?")) {
-        currentWord = currentWord.charAt(0).toUpperCase() + currentWord.slice(1)
+        currentWord = currentWord.charAt(0).toLowerCase() + currentWord.slice(1)
         document.getElementById("selectedWord").innerHTML = currentWord;
     }
 }
